@@ -41,6 +41,28 @@ for i in range(num-1):   # Делаем -1, т.к первый вес перво
         min_watermelon = kg
 
 print("Вес самого тяжелого арбуза равен: ", max_watermelon)  
-print("Вес самого легкого арбуза равен: ", min_watermelon)  
+print("Вес самого легкого арбуза равен: ", min_watermelon) 
+
+
+# Решение 3
+
+# from random import randint
+# max1=-1
+# min1=100
+# all=int(input("Введите количество сравниваемых арбузов:  "))
+# number=1
+# while all>=number:
+#     arbuz=int(randint(1,30))
+#     print(arbuz, end=', ' )
+#     if arbuz>max1:
+#         max1=arbuz
+#         number=number+1
+#     elif arbuz<min1:
+#         min1=arbuz
+#         number=number+1
+#     else:
+#         number=number+1
+# print("Самый тяжелый арбуз весит: ",max1)  
+# print("Самый легкий арбуз весит: ", min1)    
 
 
