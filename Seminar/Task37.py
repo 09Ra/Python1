@@ -4,3 +4,14 @@
 # Input: 2 -> 3 4
 # Output: 4 3
 
+
+
+def num_revers(number):
+    if number == 0:
+        return ""
+    k=input("Укажите очередное число: ")
+    return(num_revers(number-1)) + k + " "
+
+n=int(input("Введите натуральное число N: "))
+
+print(num_revers(n).strip()) # .strip удаляет все пробелы, такубяцию в конце и в начале строки

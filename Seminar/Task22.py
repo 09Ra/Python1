@@ -10,5 +10,6 @@ set1=set(randint(0,100) for i in range(n))
 set2=set(randint(0,100) for i in range(n))
 print(set1)
 print(set2)
-new_set=set1.intersection(set2)
-print(sorted(new_set))
+new_set=(set1.intersection(set2))   # intersection выводит одинаковые элементы множества
+
+print(*sorted(new_set)) #sorted сортирует элементы множества по возрастанию. * дает возможность напечатать список  через пробел без запятых
