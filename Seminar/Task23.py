@@ -7,12 +7,15 @@
 
 import random
 
+rnd=random.randint(5,10) # рандомно задаем количество элементов в массиве
 
-list_1=[random.randint(1,20) for i in range(10)]
+list_1=[random.randint(-20,20) for i in range(rnd)] # рандомно заполняем список элементами
 print(list_1)
 coint=0
 for j in range(len(list_1)-1):
     if list_1[j+1]>list_1[j]:
         coint+=1
 print(coint)        
+        
+        
         

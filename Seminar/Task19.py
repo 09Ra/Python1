@@ -21,9 +21,38 @@
 
 # Решение №3 с помощью  функции insert
 
-list_1=[1, 2, 3, 4, 5]
-k=int(input("Введите число k: "))
-for i in range(k):  
-    list_1.insert(0,list_1.pop(-1)) # Вставляем в индекс 0 последнюю позицию, которую и удаляем, т.к фунцкия pop возвращает элемент, который удаляет
-print(list_1)
+# from random import randint
+ 
+# print(list_1 := [randint(-5,5) for _ in range(10)]) 
 
+# k=int(input("Введите число k: "))
+
+# for i in range(k):  
+#     list_1.insert(0,list_1.pop(-1)) # Вставляем в индекс 0 последнюю позицию, которую и удаляем, т.к фунцкия pop возвращает элемент, который удаляет
+# print(list_1)
+
+
+# Решение №4 от Кирилла Панфилова
+
+# from random import randint
+ 
+# print(list_1 := [randint(-5,5) for _ in range(10)]) 
+
+# k=int(input("Введите сдвиг: "))
+
+# print(list_1[-k:]+list_1[:-k])
+
+
+# Решение №5 от Кирилла Панфилова
+
+from random import randint
+ 
+print(list_1 := [randint(-5,5) for _ in range(10)]) 
+
+k=int(input("Введите сдвиг: "))
+
+new_list=[]
+
+for i in range(len(list_1)):
+    new_list.append(list_1[(i-k)%len(list_1)])
+print(new_list)
